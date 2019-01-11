@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   網頁名稱-python crawler
+  </title>
+  <style>
+   .abc {
+		color: blue;
+		font-size: 40px;
+	}
+
+	#students {
+		background-color: white;
+	}
+
+	table, th, td {
+		border: 1px solid black;
+	    border-collapse: collapse;
+	}
+	th, td {
+		padding: 10px;
+	}
+  </style>
+ </head>
+ <body>
+  <h1>
+   Python 爬蟲實戰
+  </h1>
+  <h2>
+   網路爬蟲期末考試
+  </h2>
+  <h3>
+   中華科技大學電子系四乙
+  </h3>
+  <p title="webscraping" id="p1">
+   網路的世界有需多資料可以被挖掘，配合大數據技術，網路的資料提供資料處理、分析、及應用練習，甚至可以支持商業的用途。
+   從網頁內容挖掘資料的技術稱為網路資料探勘(webmining)。web scraping是一個以Python為基礎的架構用於由網頁獲得資料以供分析應用。
+  </p>
+  <div class="Notice board">
+   當我們要在電腦瀏覽器上讀取一個網頁時，瀏覽器先送一個要求(request)给網頁伺服器。requests.get使我們可以從伺服器獲得網頁檔案，
+   伺服器接受要求後，會送回一個網頁檔案，瀏覽器可以顯示這個檔案內容。
+   <p id="p2">
+    網頁檔案組成：
+
+    <ul>
+        <li>HTML：包括網頁內容</li>
+        <li>CSS：網頁顯示的格式</li>
+        <li>JS：Javascript指令提供使用者與網頁互動能力</li>
+        <li>Images：允許網頁顯示圖像的格式，如JPG，PNG格式</li>
+    </ul>
+   </p>
+  </div>
+
+  <div class="zzz" id="BeautifulSoup">
+   <a href="https://zh.wikipedia.org/wiki/Beautiful_Soup">BeautifulSoup</a>
+   是一個用於解析HTML內容的python工具套件。功能包括解析HTML、XML文檔、修復含有未閉合標籤等錯誤的文檔
+   （此種文檔常被稱為tag soup）。這個擴展套件為待解析的頁面建立一樹狀結構，以便擷取其中的數據，這在網絡資料蒐集時非常有用。
+  </div>
+
+  <div id="html table">
+   <h2> 學生資訊 </h2>
+   <table id="students">
+    <tr>
+     <th>
+      學號
+     </th>
+     <th>
+      姓名
+     </th>
+     <th>
+      出生日期
+     </th>
+     <th>
+      手機號碼
+     </th>
+    </tr>
+    <tr>
+     <td class="sid">
+      100143001
+     </td>
+     <td class="name">
+      王大明
+     </td>
+     <td class="bdate">
+      1994/12/25
+     </td>
+     <td class="cell">
+      0919222876
+      </a>
+     </td>
+    </tr>
+    <tr>
+     <td class="sid">
+      101143009
+     </td>
+     <td class="name">
+      張小娟
+     </td>
+     <td class="bdate">
+      1995/1/1
+     </td>
+     <td class="cell">
+      0938149238
+     </td>
+    </tr>
+   </table>
+  </div>
+  <p name="bottom" align="center">
+   更新日期：2019/1/11
+  </p>
+ </body>
+</html>
